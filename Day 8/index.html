@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <!-- font awsom cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <style>
+        * {
+            margin: 0;
+        }
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+        .parent{
+            height: 50px;
+            display: flex;
+            /* row's element layout  */
+            justify-content: space-around;
+
+            align-items: center;
+
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+        }
+        .nav_list{
+            width: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="parent">
+                <div>
+                    Chocolux
+                </div>
+                <div class="nav_list">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Chocolates</li>
+                        <li>Testimonial</li>
+                        <li>Contact us</li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><i class="fa-solid fa-user"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+</body>
+
+</html>

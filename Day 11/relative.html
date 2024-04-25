@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            display: flex;
+            height: 500px;
+            width: 50%;
+            background-color: lightseagreen;
+            position: relative;
+        }
+        .children{
+            background-color: lightcoral;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: white;
+            /* position: relative; */
+            /* margin-left: 2rem; */
+            /* left: 50px; */
+            /* z-index: 11; */
+
+            position: absolute;
+            /* right: 0; */
+            bottom: 0;
+
+        }
+        .children2{
+            background-color: aqua;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: white;
+            /* z-index: 10; */
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <div class="children">children1</div>
+        <!-- <div class="children2">children2</div> -->
+    </div>
+    
+</body>
+</html>
