@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .parent{
+            border: 4px solid black;
+            display: flex;
+            height: 500px;
+            /* flex-wrap: wrap; */
+            /* row-gap: 3rem; */
+            /* column-gap: 3rem; */
+            /* gap: 3rem; */
+        }
+        .children{
+            height: 100px;
+            width: 100px;
+            border: 2px solid limegreen;
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #chil1{
+            /* order: 7; */
+            /* flex-grow: 1; */
+        }
+        #chil2{
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            /* align-self: center; */
+            /* align-self:flex-start; */
+            align-self:flex-end;
+        }
+        /* #chil3{
+            order: -1;
+        }
+        #chil4{
+            order: 4;
+        }
+        #chil5{
+            order: 5;
+        }
+        #chil6{
+            order: 6;
+        }
+        #chil7{
+            order: 1;
+        }
+        #chil8{
+            order: 8;
+        } */
+       
+    </style>
+</head>
+<body>
+
+
+    <div class="parent">
+        <div class="children" id="chil1">1</div>
+        <div class="children" id="chil2">2</div>
+        <div class="children" id="chil3">3</div>
+        <div class="children" id="chil4">4</div>
+        <div class="children" id="chil5">5</div>
+        <div class="children" id="chil6">6</div>
+        <div class="children" id="chil7">7</div>
+        <div class="children" id="chil8">8</div>
+    </div>
+    
+</body>
+</html>
