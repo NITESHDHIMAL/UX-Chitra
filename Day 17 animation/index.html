@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .mainbox{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            margin: auto;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: lightgreen;
+            animation-name: colorchage;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+
+        }
+
+        /* @keyframes colorchage {
+            to{
+                background-color: blue;
+                margin-top: 250px;
+            }
+            from{
+                background-color: red;
+            }
+        } */
+
+        @keyframes colorchage {
+            0%{
+                background-color: aqua;
+                top: 0;
+                left: 0;
+            }
+            25%{
+                background-color: rgb(57, 234, 234);
+                left: 300px;
+                top: 0;
+            }
+            50%{
+                background-color: rgb(104, 226, 226);
+                top: 300px;
+                left: 300px;
+            }
+            75%{
+                background-color: rgb(153, 249, 249);
+                top: 300px;
+                left: 0;
+            }
+            100%{
+                background-color: rgb(189, 245, 245);
+                top: 0;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+ <div class="mainbox">
+    <div class="box">
+    </div>
+</div>
+    
+</body>
+</html>

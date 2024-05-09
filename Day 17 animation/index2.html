@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+    <style>
+        .box{
+            border: 3px solid black;
+            height: 50px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            border-radius: 1.5rem;
+            padding-left: 0.5rem;
+            
+        }
+        .minibox{
+            background-color: rgb(54, 228, 54);
+            height: 45px;
+            border-radius: 1.5rem;
+            display: flex;
+            align-items: center;
+            animation-name: progress;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+
+
+        @keyframes progress {
+            0%{
+                background-color: rgb(54, 228, 54);
+                width: 0%;
+            }
+            20%{
+                background-color: rgb(63, 235, 63);
+                width: 20%;
+            }
+            30%{
+                background-color: rgb(67, 234, 67);
+                width: 30%;
+            }
+            40%{
+                background-color: rgb(66, 234, 66);
+                width: 40%;
+            }
+            50%{
+                background-color: rgb(73, 239, 73);
+                width: 50%;
+            }
+            60%{
+                background-color: rgb(90, 226, 90);
+                width: 60%;
+            }
+            70%{
+                background-color: rgb(113, 248, 113);
+                width: 70%;
+            }
+            80%{
+                background-color: rgb(125, 229, 125);
+                width: 80%;
+            }
+            90%{
+                background-color: rgb(125, 229, 125);
+                width: 90%;
+            }
+            100%{
+                background-color: rgb(125, 229, 125);
+                width: 100%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <div class="minibox">Loading...</div>
+    </div>
+
+    
+</body>
+</html>
